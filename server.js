@@ -1,9 +1,10 @@
 const express = require("express")
 const colors = require("colors")
 const dbconnect = require("./config/db")
+const {PORT} = require('./config/index')
 
 const app = express();
-const PORT=5000;
+
 
 app.listen(PORT, console.log(`server is running at ${PORT}` .bgGreen));
 
